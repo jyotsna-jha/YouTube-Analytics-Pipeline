@@ -562,3 +562,108 @@
 [2026-01-28T12:54:51.667+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:54:51.667+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2026-01-28T12:54:51.691+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:54:51.690+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
 [2026-01-28T12:54:51.714+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.206 seconds
+[2026-01-28T12:55:22.336+0000] {processor.py:186} INFO - Started process (PID=1100) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:55:22.337+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:55:22.339+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:55:22.338+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:55:22.442+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:55:22.480+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:55:22.480+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:55:22.514+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:55:22.514+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:55:22.537+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.208 seconds
+[2026-01-28T12:55:52.799+0000] {processor.py:186} INFO - Started process (PID=1115) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:55:52.800+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:55:52.802+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:55:52.801+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:55:53.067+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:55:53.139+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:55:53.139+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:55:53.191+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:55:53.191+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:55:53.218+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.425 seconds
+[2026-01-28T12:56:23.343+0000] {processor.py:186} INFO - Started process (PID=1130) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:56:23.345+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:56:23.346+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:56:23.346+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:56:23.440+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:56:23.471+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:56:23.471+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:56:23.500+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:56:23.500+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:56:23.522+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.186 seconds
+[2026-01-28T12:56:53.796+0000] {processor.py:186} INFO - Started process (PID=1145) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:56:53.798+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:56:53.801+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:56:53.800+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:56:53.940+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:56:53.976+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:56:53.975+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:56:54.003+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:56:54.003+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:56:54.027+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.238 seconds
+[2026-01-28T12:57:24.426+0000] {processor.py:186} INFO - Started process (PID=1160) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:57:24.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:57:24.429+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:57:24.428+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:57:24.531+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:57:24.564+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:57:24.564+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:57:24.590+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:57:24.590+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:57:24.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.197 seconds
+[2026-01-28T12:57:55.138+0000] {processor.py:186} INFO - Started process (PID=1175) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:57:55.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:57:55.141+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:57:55.141+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:57:55.245+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:57:55.277+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:57:55.277+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:57:55.307+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:57:55.307+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:57:55.339+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.212 seconds
+[2026-01-28T12:58:25.709+0000] {processor.py:186} INFO - Started process (PID=1190) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:58:25.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:58:25.713+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:58:25.712+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:58:25.841+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:58:25.881+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:58:25.881+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:58:25.915+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:58:25.915+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:58:25.944+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.242 seconds
+[2026-01-28T12:58:56.020+0000] {processor.py:186} INFO - Started process (PID=1205) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:58:56.021+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:58:56.023+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:58:56.023+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:58:56.244+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:58:56.286+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:58:56.286+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:58:56.320+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:58:56.320+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:58:56.346+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.333 seconds
+[2026-01-28T12:59:26.868+0000] {processor.py:186} INFO - Started process (PID=1220) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:59:26.870+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:59:26.872+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:59:26.871+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:59:27.008+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:59:27.046+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:59:27.045+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:59:27.076+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:59:27.075+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:59:27.098+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.237 seconds
+[2026-01-28T12:59:57.545+0000] {processor.py:186} INFO - Started process (PID=1235) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:59:57.547+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T12:59:57.548+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:59:57.548+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:59:57.629+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T12:59:57.655+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:59:57.655+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T12:59:57.679+0000] {logging_mixin.py:190} INFO - [2026-01-28T12:59:57.679+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T12:59:57.702+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.163 seconds
+[2026-01-28T13:00:28.135+0000] {processor.py:186} INFO - Started process (PID=1250) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:00:28.136+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T13:00:28.138+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:00:28.137+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:00:28.272+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:00:28.316+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:00:28.315+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T13:00:28.340+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:00:28.339+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T13:00:28.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.228 seconds
+[2026-01-28T13:00:59.022+0000] {processor.py:186} INFO - Started process (PID=1265) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:00:59.058+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T13:00:59.068+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:00:59.067+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:01:00.722+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:01:00.921+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:01:00.921+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T13:01:01.150+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:01:01.149+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T13:01:01.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.310 seconds
+[2026-01-28T13:01:32.084+0000] {processor.py:186} INFO - Started process (PID=1280) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:01:32.085+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T13:01:32.087+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:01:32.087+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:01:32.321+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:01:32.369+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:01:32.369+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T13:01:32.410+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:01:32.410+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T13:01:32.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.360 seconds
+[2026-01-28T13:02:02.591+0000] {processor.py:186} INFO - Started process (PID=1295) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:02:02.595+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T13:02:02.601+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:02:02.600+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:02:02.897+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:02:02.969+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:02:02.968+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T13:02:03.025+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:02:03.025+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T13:02:03.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.482 seconds
+[2026-01-28T13:02:33.438+0000] {processor.py:186} INFO - Started process (PID=1310) to work on /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:02:33.460+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2026-01-28T13:02:33.474+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:02:33.473+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:02:35.229+0000] {processor.py:925} INFO - DAG(s) 'youtube_data_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2026-01-28T13:02:35.405+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:02:35.396+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-01-28T13:02:35.492+0000] {logging_mixin.py:190} INFO - [2026-01-28T13:02:35.483+0000] {dag.py:4138} INFO - Setting next_dagrun for youtube_data_backup to 2026-02-01 00:00:00+00:00, run_after=2026-02-08 00:00:00+00:00
+[2026-01-28T13:02:35.659+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.234 seconds
