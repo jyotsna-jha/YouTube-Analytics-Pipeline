@@ -1,4 +1,4 @@
-# YouTube Analytics Pipeline - The Layman AI
+# YouTube Analytics Pipeline
 
 > Automated ETL pipeline for YouTube channel analytics using Apache Airflow
 
