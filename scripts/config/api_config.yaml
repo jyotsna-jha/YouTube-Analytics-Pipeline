@@ -1,0 +1,41 @@
+youtube:
+  api_base_url: "https://www.googleapis.com/youtube/v3"
+  api_key: ${YOUTUBE_API_KEY}
+  channel_id: ${LAYMAN_AI_CHANNEL_ID}
+  
+  # List of competitor channels (add their IDs)
+  competitor_channels:
+    - id: "UC8butISFwT-Wl7EV0hUK0BQ"  # freeCodeCamp
+    - id: "UCsvqVGtbbyHaMoevxPAq9Fg"  # Simplilearn
+    - id: "UCWv7vMbMWH4-V0ZXdmDpPBA"  # Programming with Mosh
+  
+  endpoints:
+    channels: "/channels"
+    videos: "/videos"
+    search: "/search"
+    playlistItems: "/playlistItems"
+    commentThreads: "/commentThreads"
+
+  params:
+    default:
+      part: "snippet,statistics,contentDetails"
+      maxResults: 50
+    trending:
+      chart: "mostPopular"
+      regionCode: "IN"
+    
+database:
+  postgres:
+    host: "postgres"
+    port: 5432
+    database: "airflow"
+    user: "airflow"
+    password: "airflow"
+  
+slack:
+  webhook_url: ${SLACK_WEBHOOK_URL}  # Optional for alerts
+
+email:
+  recipients:
+    - "team@laymanai.com"
+  sender: "airflow@laymanai.com"

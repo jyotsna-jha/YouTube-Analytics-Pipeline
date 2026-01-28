@@ -1,0 +1,86 @@
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.10.0
+  environment: &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
+    # CRITICAL FOR WINDOWS:
+    AIRFLOW__WEBSERVER__WORKERS: 2  # Reduced from 4
+    AIRFLOW__WEBSERVER__WORKER_TIMEOUT: 300  # Increased from 120
+    AIRFLOW__WEBSERVER__WEB_SERVER_WORKER_TIMEOUT: 300
+    AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: 300
+    YOUTUBE_API_KEY: ${YOUTUBE_API_KEY:-your_api_key_here}
+    _PIP_ADDITIONAL_REQUIREMENTS: ""
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./scripts:/opt/airflow/scripts
+  user: "50000:0"  # Fixed for Windows
+  mem_limit: 2g  # Add memory limit
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    restart: always
+    mem_limit: 1g
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: >
+      bash -c '
+      echo "Starting Airflow webserver with optimized settings for Windows..." &&
+      airflow webserver --workers 2 --worker-timeout 300
+      '
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s  # Increased
+      timeout: 30s   # Increased
+      retries: 10    # More retries
+    restart: on-failure
+    mem_limit: 2g
+    depends_on:
+      - postgres
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: always
+    mem_limit: 1g
+    depends_on:
+      - postgres
+
+  airflow-init:
+    <<: *airflow-common
+    command: >
+      bash -c '
+      airflow db init &&
+      airflow users create \
+        --username admin \
+        --firstname Admin \
+        --lastname User \
+        --role Admin \
+        --email admin@example.com \
+        --password admin
+      '
+    environment:
+      <<: *airflow-common-env
+
+volumes:
+  postgres-db-volume:
